@@ -1,0 +1,588 @@
+  <!-- =======================================================
+  * Name: My Portfolio Site
+  * Created: Fall Term 2023
+  * Template URL: https://gincalicdan.github.io/myPortfolio/
+  * Author: Rogine Calicdan
+  * Course: TECH1101: Web and Internet Fundamentals
+  * Instructor: Mahbub Murshed, PhD
+  ======================================================== -->
+  <!DOCTYPE html>
+  <html lang="en">
+    <title></title>
+      <head>
+        <title>My Portfolio Site</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="css/styles.css">
+          <link rel="stylesheet" href="css/cheatsheet.css">
+          
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      </head>
+  <body> 
+
+<div class="navbar">
+    <ul class="topnav">
+        <li><a href="index.html#homesection">Home</a></li>
+        <li><a href="index.html#aboutheader">About</a></li>
+        <li><a href="index.html#resumesection">Resume</a></li>
+        <li><a href="hobbies.html#hobbies">Hobbies/Interest</a></li>
+        <li><a href="index.html#contactmesection">Contact Me</a></li>
+        <li class="cheatsheet">
+          <a href="javascript:void(0)">Cheatsheet</a>
+          <div class="cheatsheet-content">
+            <a href="htmlcheatsheet.html">HTML</a>
+            <a href="csscheatsheet.html">CSS</a>
+            <a href="jscheatsheet.html">JavaScript</a>
+          </div>
+        </li>
+    </ul>
+</div>  
+
+<h1 id="headerhtmlcheatsheet">My CSS Cheat Sheet</h1>
+<hr>
+<section id="firstselector">
+<h2> Universal Selector </h2>
+    <pre>
+        <code>
+            * {
+                margin: 1;
+                padding: 1;
+                box-sizing: border-box;
+            }
+        </code>
+    </pre>
+</section>
+
+<section id="selectors">
+<h2> Type Selector </h2>
+    <pre>
+        <code>
+            body {
+                font-family: 'Raleway', sans-serif;
+                background-color: whitesmoke;
+                margin-left:4%;
+                margin-right:4%;
+            }
+              
+            hr {
+                border-bottom:2px solid lightseagreen;
+                width:100%;
+                padding-bottom:0%;
+            }
+              
+            h1 {
+                text-align:center;
+                padding-top:4%;
+            }
+
+            blockquote {
+                font-family:Verdana, Geneva, Tahoma,
+                    sans-serif;
+                font-weight:500;
+                font-style:normal;
+                text-align:justify;
+                width:80%;
+                margin-left: 35%;
+            }   
+        </code>
+    </pre>
+</section>
+
+<section id="selectors">
+<h2> ID Selector </h2>
+    <pre>
+        <code>
+
+            #homesection {
+                margin-top:65%;
+              }
+            
+            #hobbies {
+                margin-top:65%;
+              }
+
+            #footer {
+                background: whitesmoke;
+                padding: 24px 0;
+                font-size: 14px;
+                margin-top:0%;
+            }
+                  
+            #footer .copyright {
+                text-align: center;
+            }
+        </code>
+    </pre>
+</section>
+    
+<section id="selectors">
+<h2> Attribute Selector </h2>
+    <pre>
+        <code>
+            input[type=text], [type=email], select,
+                textarea {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    resize: vertical;
+            }
+                  
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+                font-weight:bold;   
+            }
+                  
+            input[type=submit] {
+                background-color: lightseagreen;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+                  
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }     
+        </code>
+    </pre>
+</section>
+    
+<section id="selectors">
+<h2> Class Selector </h2>
+    <pre>
+        <code>
+            ul.topnav {
+                list-style-type: none;
+                position:fixed;
+                top:0;
+                margin: 0;
+                padding: 0;
+                overflow: visible;
+                background-color: lightseagreen;
+                width:92%;
+            }
+              
+            ul.topnav li {
+                float: left; 
+            }
+              
+            ul.topnav li a,.cheatsheetdropdown {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+              
+            ul.topnav li.cheatsheet {
+                display: inline-block;
+            }
+              
+            .cheatsheet-content {
+                display: none;
+                position: absolute;
+                background-color: grey;
+                min-width: 80px;
+                box-shadow: 0px 8px 16px 0px
+                    rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+              
+            .cheatsheet-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+            }
+                
+            .cheatsheet-content a:hover {
+                background-color: #f1f1f1;
+            }
+                
+            .cheatsheet:hover .cheatsheet-content {
+                display: block;
+            }
+              
+            ul.topnav li a:hover:not(.active) {
+                background-color: #111;
+            }
+              
+            ul.topnav li.cheatsheet {
+                float: right;
+                background-color: grey;
+            }
+              
+            @media screen and (max-width: 600px) {
+                ul.topnav li.right, 
+                ul.topnav li {float: none;}
+            }
+              
+            .header section{
+ 
+                background-color:  lightseagreen;
+                padding-bottom: 20%;
+                padding-top: 10%;
+                width: 100%;
+                border-radius:20px;
+               
+              }
+              
+            .header section h1 {
+                color: yellow;
+                font-size: 40px;
+                text-align: center;
+                line-height: 0px;
+              }
+              
+              .header section h2 {
+                font-family:'Trebuchet MS', 'Lucida Sans
+                Unicode','Lucida Grande', 'Lucida Sans', 
+                Arial, sans-serif;
+                color:white;
+                font-size: 22px;
+                text-align:center;
+                margin-top: 0%;
+                font-weight:lighter;
+              }
+              
+            .about{
+                margin-left:10%;
+                margin-right:10%;
+                
+            }
+
+            .aboutsection1 {
+                float: center;
+                width:40%;
+                height:0%;
+                margin-left: 10%;  
+            }
+              
+            .aboutsection2 {
+                float: center;
+                width:60%;
+                height:0%;
+                padding-top:2%;
+                margin-left: 5%;
+            }
+              
+            .aboutsection3 {
+                float: center;
+                width:60%;
+                height:0%;
+                padding-top:6%;
+                margin-left: 10%;
+                font-weight:600;
+                line-height:1em;
+            }
+              
+            .emailad, .homead {
+                color:indigo;
+            }
+              
+            .about::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .aboutsection1 img {
+                float:left;
+                width:30%;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+              
+            @media screen and (max-width:1540px) {
+                .about {
+                width: 100%;
+            }
+              
+            .education {
+                width: 100%;
+            }
+        
+            div.insideintro img {
+                  width:100%;
+                }
+            }
+
+            .techskills {
+                margin-left:15%;
+                margin-bottom:0%;
+                line-height:1em;
+                font-weight:600;
+            }
+              
+            .containerskills {
+                width: 75%;
+                background-color: #ddd;
+                margin-left:15%;
+            }
+              
+            .allskills {
+                text-align: right;
+                color: white;
+            }
+              
+            .html {
+                width: 90%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .css {
+                width: 80%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .js {
+                width: 50%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .c {
+                width: 55%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+            .arduino {
+                width: 85%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .ux {
+                width: 75%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .github {
+                width: 80%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .bootstrap {
+                width: 85%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .vba {
+                width: 65%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .php {
+                width: 75%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .mysql {
+                width: 60%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .wordpress {
+                width: 80%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .msoffice {
+                width: 100%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+
+            .keyboarding {
+                width: 90%; 
+                background-color: lightseagreen;
+                font-weight:600;
+                color:black;
+            }
+ 
+            div.skills h2 {
+                color: grey;
+            }
+              
+            .technicalskills {
+                margin-left:10%;
+            }
+              
+            .softskills {
+                margin-left:10%;
+            }
+              
+            .softskillsul{
+                margin-left:13%;
+                font-weight:500;
+                line-height:1.5em;
+            }
+              
+            div.resume {
+                padding-top:0%;
+                padding-bottom:0%;
+                margin-left:10%;
+                margin-right:10%; 
+            }
+
+            div.resume section h2 {
+                color:grey;
+            }
+
+            .firstp::first-line {
+                font-weight:bold;
+            }
+
+            .firstp .secondp{
+                font-style:italic;
+            }
+
+            div.resume section p:nth-child(1n) {
+                margin-left:10%;
+                padding-bottom:0%;
+                font-weight:normal;
+                line-height:1.5em;
+            }
+
+            div.resume section p:nth-child(2n) {
+                margin-left:10%;
+                padding-bottom:0%;
+                font-weight:normal;
+                line-height:1.5em;
+            }
+
+            div.resume section p:nth-child(3n) {
+                margin-left:10%;
+                padding-bottom:0%;
+                font-weight:normal;
+                line-height:1.5em;
+            }
+              
+            ul.experiencefirst {
+                margin-left:10%;
+                font-weight:normal;
+                line-height:1.5em;
+            }
+              
+            .contactme {
+                margin-left:20%;
+                margin-right:20%; 
+            }
+
+            .leftcol {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+              
+            .rightcol {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+              
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+              
+             
+            @media screen and (max-width: 600px) {
+                .col-25, .col-75, 
+                  input[type=submit] {
+                  width: 100%;
+                  margin-top: 0;
+                }
+            }
+             
+            div.gallery {
+                border: 0px solid #ccc;
+            }
+              
+            div.gallery:hover {
+                border: 0px solid #777;
+            }
+              
+            div.gallery img {
+                width: 100%;
+                height: auto;
+                border-radius:20px;
+            }
+              
+            div.desc {
+                padding: 15px;
+                text-align: center;
+                font-weight:600;
+            }
+              
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+            }
+              
+            @media only screen and (max-width: 700px) {
+                .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+                }
+            }
+              
+              @media only screen and (max-width: 500px) {
+                .responsive {
+                  width: 100%;
+                }
+            }
+              
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }  
+        </code>
+    </pre>
+</section>
+
+
+
+<!-- ======= Footer ======= -->
+<hr>
+<footer id="footer">
+    <div class="copyright">
+        &copy; Copyright <strong><span>Rogine Calicdan</span></strong>. All Rights Reserved.
+    </div>
+</footer><!-- End  Footer -->
+
+<!-- ======= JS file ======= -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* For cheatsheet styles */
+
+pre {
+  /*background-color: #ecf0f1;*/
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size:12px;
+}
+
+code {
+  display: inline-block; /* Ensures padding is applied */
+  padding-top:0.2em;
+  padding-bottom:0.2em;
+  line-height:1.5em;
+}
+
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+#firstselector {
+    margin-top:50%;
+  }
+}
