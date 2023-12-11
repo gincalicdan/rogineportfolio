@@ -1,0 +1,118 @@
+  <!-- =======================================================
+  * Name: My Portfolio Site
+  * Created: Fall Term 2023
+  * Template URL: https://gincalicdan.github.io/myPortfolio/
+  * Author: Rogine Calicdan
+  * Course: TECH1101: Web and Internet Fundamentals
+  * Instructor: Mahbub Murshed, PhD
+  ======================================================== -->
+  <!DOCTYPE html>
+  <html lang="en">
+    <title></title>
+      <head>
+        <title>My Portfolio Site</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="css/styles.css">
+          <link rel="stylesheet" href="css/cheatsheet.css">
+          
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+      </head>
+  <body> 
+
+<div class="navbar">
+    <ul class="topnav">
+        <li><a href="index.html#homesection">Home</a></li>
+        <li><a href="index.html#aboutheader">About</a></li>
+        <li><a href="index.html#resumesection">Resume</a></li>
+        <li><a href="hobbies.html#hobbies">Hobbies/Interest</a></li>
+        <li><a href="index.html#contactmesection">Contact Me</a></li>
+        <li class="cheatsheet">
+          <a href="javascript:void(0)">Cheatsheet</a>
+          <div class="cheatsheet-content">
+            <a href="htmlcheatsheet.html">HTML</a>
+            <a href="csscheatsheet.html">CSS</a>
+            <a href="jscheatsheet.html">JavaScript</a>
+          </div>
+        </li>
+    </ul>
+</div>  
+
+<h1 id="headerhtmlcheatsheet">My JavaScript Cheat Sheet</h1>
+<hr>
+<section id="firstselector">
+<h2>Variables</h2>
+  <pre><code>
+    <span>// Declare a variable</span>
+        <span>const search;</span>
+        <span>const targetId;</span>
+        <span>const targetSection;</span>
+
+    <span>// Assign a value</span>
+        <span>search = "new URLSearchParams(window.location.hash)";</span>
+        <span>targetId = "search.get('#');</span>
+
+  </code></pre>
+
+  <h2>Control Flow</h2>
+  <pre><code>
+    <span>// If statement</span>
+        <span>if (targetId) {</span>
+        <span> targetSection = document.getElementById(targetId)</span>
+        <span>}</span>
+
+        <span>if (targetSection) {</span>
+        <span> targetSection.scrollIntoView();</span>
+        <span>}</span>
+ </code></pre>  
+
+<h2>Functions</h2>
+  <pre><code>
+    <span>// Declare a function</span>
+        <span>function targetSpecificId() {</span>
+        <span>   if (targetId) {
+            const targetSection= document.getElementById
+            (targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView();
+                }
+            }</span>
+        <span>}</span>
+
+    <span>// Call the function</span>
+        <span>window.onload = targetSpecificId;</span>
+</code></pre> 
+
+<h2>My Sample API</h2>
+  <pre><code>
+        <span>  const vibes = document.getElementById("joke");
+          const btn = document.getElementById("btn");
+          const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
+          
+          let myVibe = () => {
+          
+              fetch(url)
+              .then(data => data.json())
+              .then(item =>{
+                  vibes.textContent = `${item.joke}`;
+              });
+          }
+          
+          btn.addEventListener("click", myVibe);
+          myVibe();</span>
+  </code></pre> 
+
+
+<!-- ======= Footer ======= -->
+<hr>
+<footer id="footer">
+    <div class="copyright">
+        &copy; Copyright <strong><span>Rogine Calicdan</span></strong>. All Rights Reserved.
+    </div>
+</footer><!-- End  Footer -->
+
+<!-- ======= JS file ======= -->
+  <script src="js/script.js"></script>
+</body>
+</html>
