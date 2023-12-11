@@ -104,15 +104,17 @@ ul.topnav li.cheatsheet {
 /* home
 xxxxxxxxxxxxxxxxxxxxxxx */
 
-
-.header section{
- 
+.header {
   background-color:  lightseagreen;
-  padding-bottom: 20%;
-  padding-top: 10%;
+  padding-bottom: 5%;
   width: 100%;
   border-radius:20px;
- 
+}
+
+.header section{
+  padding-bottom: 5%;
+  padding-top: 1%;
+  width: 100%;
 }
 
 .header section h1 { /* Access the <section> in the header */
@@ -552,6 +554,10 @@ div.desc {
   .responsive {
     width: 100%;
   }
+
+  .myApi {
+    width: 100%;
+  }
 }
 
 .clearfix:after {
@@ -562,3 +568,32 @@ div.desc {
 
 /* end hobbies/interest styles */
 
+.myApi {
+  color: yellow;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+
+#btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#btn:hover {background-color: #3e8e41}
+
+#btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0px 1px #666;
+  transform: translateY(2px);
+}
