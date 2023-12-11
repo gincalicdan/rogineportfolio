@@ -558,6 +558,10 @@ div.desc {
   .myApi {
     width: 100%;
   }
+
+  #selectors, #firstselector {
+    width:100%;
+  }
 }
 
 .clearfix:after {
