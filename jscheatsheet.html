@@ -42,8 +42,26 @@
 <h1 id="headerhtmlcheatsheet">My JavaScript Cheat Sheet</h1>
 <hr>
 
-<section id="firstselector">
+<h2>My Sample API</h2>
+  <pre><code>
+        <span>  const vibes = document.getElementById("joke");
+          const btn = document.getElementById("btn");
+          const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
+          
+          let myVibe = () => {
+          
+              fetch(url)
+              .then(data => data.json())
+              .then(item =>{
+                  vibes.textContent = `${item.joke}`;
+              });
+          }
+          
+          btn.addEventListener("click", myVibe);
+          myVibe();</span>
+  </code></pre> 
 
+<section id="firstselector">
 <h2>Variables</h2>
   <pre><code>
     <span>// Declare a variable</span>
@@ -86,6 +104,8 @@
         <span>window.onload = targetSpecificId;</span>
 
 </code></pre> 
+
+
 <!-- ======= Footer ======= -->
 <hr>
 <footer id="footer">
