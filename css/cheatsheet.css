@@ -26,5 +26,6 @@ code {
 @media screen and (max-width:600px) {
 #htmlselectors, #cssselectors, #jsselectors {
     width:100%;
+    font-size: 10px;
   }
 }
