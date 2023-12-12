@@ -22,3 +22,8 @@ code {
     margin-top:60%;
   }
 }
+@media screen and (max-width:600px) {
+#selectors {
+    width:100%;
+  }
+}
