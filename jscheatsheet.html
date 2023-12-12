@@ -50,7 +50,7 @@
         <span>const targetSection;</span>
 
     <span>// Assign a value</span>
-        <span>search = "new URLSearchParams(window.location.hash)";</span>
+    <span id="jsselectors">search = "new URLSearchParams(window.location.hash)";</span>
         <span>targetId = "search.get('#');</span>
 
   </code></pre>
@@ -59,7 +59,8 @@
   <pre><code>
     <span>// If statement</span>
         <span>if (targetId) {</span>
-        <span> targetSection = document.getElementById(targetId)</span>
+          <span id="jsselectors"> targetSection = document.getElementById
+              (targetId)</span>
         <span>}</span>
 
         <span>if (targetSection) {</span>
@@ -70,7 +71,7 @@
 <h2>Functions</h2>
   <pre><code>
     <span>// Declare a function</span>
-        <span>function targetSpecificId() {</span>
+    <span id="jsselectors">function targetSpecificId() {</span>
         <span>  if (targetId) {
           const targetSection= document.getElementById
           (targetId);
@@ -86,7 +87,7 @@
 
 <h2>My Sample API</h2>
   <pre><code>
-  <span id="selectors">  const vibes = document.getElementById("joke");
+  <span id="jsselectors">  const vibes = document.getElementById("joke");
     const btn = document.getElementById("btn");
     const url = "https://v2.jokeapi.dev/joke/Any?
     blacklistFlags=nsfw,religious,political,racist,
