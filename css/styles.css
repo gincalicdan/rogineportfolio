@@ -548,6 +548,9 @@ div.desc {
     width: 49.99999%;
     margin: 6px 0;
   }
+  div.gallerysolar {
+    margin-top: 45%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
